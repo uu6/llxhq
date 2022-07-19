@@ -35,7 +35,9 @@ https://api.vv1234.cn/llxhq/
 Gcod
 2022 年 07月 19日    
 欢迎各位大佬来[我博客][6]做客，添加友链
-[https://vv1234.cn/archives/750.html][8]
+[https://vv1234.cn/archives/750.html][7]
+当然，如果谁要请我喝罐可乐，我也不会拒绝
+![pyjy][8]
 
 
   [1]: https://api.vv1234.cn/llxhq/
@@ -44,5 +46,5 @@ Gcod
   [4]: https://wx1.vv1234.cn/2022/07/19/62d6c2690b371.png
   [5]: https://wx1.vv1234.cn/2022/07/19/62d6c38600d6a.png
   [6]: https://vv1234.cn/archives/750.html
-  [7]: https://vv1234.cn
-  [8]: https://vv1234.cn/archives/750.html
+  [7]: https://vv1234.cn/archives/750.html
+  [8]: https://wx1.vv1234.cn/2022/07/19/62d6cae36db89.jpg
