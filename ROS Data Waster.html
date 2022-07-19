@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="theme-color" content="#3F51B5">
+
+    <title>ROS Data Waster</title>
+    <meta name="description" content="The most straightforward way to waste all of your data.">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.0.0/material-components-web.min.css" integrity="sha256-sljrYCrrEK55ECAXF6gHxng8RLXHZYpsblwhH4P7bsM=" crossorigin="anonymous" />
+
+    <style>
+        body {
+            --mdc-theme-primary: #3f51b5;
+            --mdc-theme-secondary: #f44336;
+            background-color: #fafafa;
+        }
+        
+        body .ribbon {
+            top: 0;
+            z-index: -1;
+            background-color: var(--mdc-theme-primary, #6200ee);
+            width: 100%;
+            height: 10rem;
+            position: absolute;
+        }
+        
+        body .main-content {
+            background-color: white;
+            border-radius: 4px;
+            margin: 1.5rem;
+            padding: 2rem;
+            min-height: calc(100vh - 7rem);
+        }
+        
+        body .main-content .option__mbs {
+            width: 100%;
+            margin-top: 32px;
+        }
+        
+        body .main-content .mdc-switch__label {
+            margin-left: 10px;
+        }
+        
+        body .main-content .option__threads-title {
+            margin-bottom: 0;
+        }
+        
+        body .main-content img {
+            max-width: 100%;
+        }
+        
+        body .main-content .mdc-button.mdc-button--raised {
+            background-color: var(--mdc-theme-secondary, #018786);
+        }
+        
+        body .main-content .theme-toggle {
+            position: absolute;
+            top: 0.5rem;
+            right: 3rem;
+        }
+        
+        body .main-content a {
+            color: var(--mdc-theme-primary, #6200ee);
+        }
+        
+        body .main-content::-moz-selection {
+            background-color: var(--mdc-theme-primary, #6200ee);
+            color: white;
+        }
+        
+        body .main-content::selection {
+            background-color: var(--mdc-theme-primary, #6200ee);
+            color: white;
+        }
+        
+        body .main-content #carbonads {
+            margin-bottom: 1rem;
+            float: right;
+            border-radius: 6px;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            font-family: Roboto, sans-serif;
+            line-height: 28px;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @media only screen and (max-width: 425px) {
+            body .main-content #carbonads {
+                width: 100%;
+            }
+        }
+        
+        body .main-content #carbonads:hover {
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        }
+        
+        body .main-content #carbonads .carbon-wrap .carbon-img > img {
+            margin-right: 9px;
+            float: left;
+        }
+        
+        @media only screen and (max-width: 400px) {
+            body .main-content #carbonads .carbon-wrap .carbon-img > img {
+                width: auto;
+                max-width: 130px;
+                height: 50px;
+            }
+        }
+        
+        body .main-content #carbonads .carbon-wrap .carbon-text {
+            color: #637381;
+            font-weight: 300;
+            display: block;
+            font-size: 12px;
+            line-height: 15.96px;
+            margin-bottom: 0;
+            margin-top: 8px;
+            text-decoration: none;
+        }
+        
+        body .main-content #carbonads .carbon-poweredby {
+            color: #c5cdd0;
+            font-size: 8px;
+            font-weight: 500;
+            line-height: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        body .output__progress {
+            bottom: 0px;
+            height: 8px;
+            position: fixed;
+        }
+        
+        body .full-width {
+            width: 100%;
+        }
+        
+        body.setting--dark {
+            background-color: #121212 !important;
+            --mdc-theme-text-primary-on-background: white;
+            --mdc-theme-text-secondary-on-background: white;
+            --mdc-theme-text-icon-on-background: white;
+        }
+        
+        body.setting--dark::-webkit-scrollbar {
+            background-color: #424242;
+        }
+        
+        body.setting--dark .main-content {
+            color: white;
+            background-color: #212121;
+        }
+        
+        body.setting--dark .mdc-linear-progress__buffer {
+            background-color: #404040;
+        }
+        
+        body.setting--dark .mdc-select__selected-text,
+        body.setting--dark .mdc-text-field__input,
+        body.setting--dark .mdc-floating-label,
+        body.setting--dark #carbonads .carbon-text {
+            color: white !important;
+        }
+        
+        body.setting--dark .mdc-notched-outline__leading,
+        body.setting--dark .mdc-notched-outline__notch,
+        body.setting--dark .mdc-notched-outline__trailing {
+            border-color: white !important;
+        }
+        
+        body.setting--dark a {
+            color: #5c6bc0;
+        }
+        
+        body.setting--dark::-moz-selection {
+            background-color: #c5cae9;
+            color: black;
+        }
+        
+        body.setting--dark::selection {
+            background-color: #c5cae9;
+            color: black;
+        }
+        
+        body.setting--animate-colours {
+            transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        body.setting--animate-colours .main-content,
+        body.setting--animate-colours a,
+        body.setting--animate-colours::-moz-selection {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: background-color, color;
+        }
+        
+        body.setting--animate-colours .main-content,
+        body.setting--animate-colours a,
+        body.setting--animate-colours::selection {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: background-color, color;
+        }
+        
+        body::-webkit-scrollbar {
+            border-radius: 100px;
+            background-color: transparent;
+            width: 8px;
+            height: 8px;
+        }
+        
+        body::-webkit-scrollbar-button {
+            height: 0;
+            width: 0;
+        }
+        
+        body::-webkit-scrollbar-corner {
+            background-color: transparent;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            border-radius: 100px;
+            background-color: rgba(0, 0, 0, 0.2);
+            min-height: 28px;
+        }
+        
+        body::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        body::-webkit-scrollbar-thumb:active {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        body::-webkit-scrollbar-track {
+            background-clip: padding-box;
+            border-width: 0 0 0 4px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="ribbon mdc-elevation--z4"></div>
+    <main class="main-content mdc-typography mdc-elevation--z8">
+        <script async src="https://cdn.carbonads.com/carbon.js?serve=CK7I6K3E&amp;placement=wwwrichie-bendallml" id="_carbonads_js"></script>
+        <button class="theme-toggle mdc-fab mdc-fab--mini" aria-label="Toggle Theme Settings" data-mdc-auto-init="MDCRipple">
+            <svg class="theme-toggle__svg mdc-fab__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M11 7l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L13 7h-2zm-.15 5.65L12 9l1.15 3.65h-2.3zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48z" />
+            </svg>
+        </button>
+        <h1 class="mdc-typography--headline2">ROS Data Waster</h1>
+        <p class="mdc-typography--body1">The most straightforward way to waste all of your data.</p>
+        <br>
+        <div class="option__unlimited mdc-switch mdc-switch--checked" data-mdc-auto-init="MDCSwitch">
+            <div class="mdc-switch__track"></div>
+            <div class="mdc-switch__thumb-underlay">
+                <div class="mdc-switch__thumb">
+                    <input type="checkbox" class="mdc-switch__native-control" role="switch" checked>
+                </div>
+            </div>
+        </div>
+        <label class="mdc-switch__label" for="option--unlimited-input">Waste Unlimited Data</label>
+        <div class="option__mbs mdc-text-field mdc-text-field--outlined mdc-text-field--disabled" data-mdc-auto-init="MDCTextField">
+            <input type="number" min="1" id="goal" value="1" class="mdc-text-field__input" disabled>
+            <div class="mdc-notched-outline">
+                <div class="mdc-notched-outline__leading"></div>
+                <div class="mdc-notched-outline__notch">
+                    <label for="goal" class="mdc-floating-label">MBs of data to waste</label>
+                </div>
+                <div class="mdc-notched-outline__trailing"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="option__threads-title mdc-typography--body2">Download threads (higher is for faster wasting, lower is for more precision)</p>
+        <div class="option__threads mdc-slider mdc-slider--discrete mdc-slider--display-markers" tabindex="0" role="slider" aria-valuemin="1" aria-valuemax="20" aria-valuenow="8" aria-label="Select Value" data-mdc-auto-init="MDCSlider">
+            <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+                <div class="mdc-slider__track-marker-container"></div>
+            </div>
+            <div class="mdc-slider__thumb-container">
+                <div class="mdc-slider__pin">
+                    <span class="mdc-slider__pin-value-marker"></span>
+                </div>
+                <svg class="mdc-slider__thumb" width="21" height="21">
+                    <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                </svg>
+                <div class="mdc-slider__focus-ring"></div>
+            </div>
+        </div>
+        <br>
+        <button class="option__waste mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple">
+            <svg class="mdc-fab__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z" />
+            </svg>
+            <span class="mdc-fab__label">Start Wasting</span>
+        </button>
+        <br>
+        <br>
+        <ul class="mdc-list mdc-list--two-line">
+            <li class="mdc-list-item" tabindex="0" data-mdc-auto-init="MDCRipple">
+                <svg class="mdc-list-item__graphic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
+                </svg>
+                <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">Data wasted</span>
+                <span class="mdc-list-item__secondary-text output__wasted">0.00 MB</span>
+                </span>
+            </li>
+            <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                <svg class="mdc-list-item__graphic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M11 17c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1zm0-14v4h2V5.08c3.39.49 6 3.39 6 6.92 0 3.87-3.13 7-7 7s-7-3.13-7-7c0-1.68.59-3.22 1.58-4.42L12 13l1.41-1.41-6.8-6.8v.02C4.42 6.45 3 9.05 3 12c0 4.97 4.02 9 9 9 4.97 0 9-4.03 9-9s-4.03-9-9-9h-1zm7 9c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zM6 12c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1z" />
+                </svg>
+                <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">Data wasted per second</span>
+                <span class="mdc-list-item__secondary-text"><span class="output__speed">0.00 MB</span>/s</span>
+                </span>
+            </li>
+            <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                <svg class="mdc-list-item__graphic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                </svg>
+                <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">Time running</span>
+                <span class="output__time mdc-list-item__secondary-text">0 seconds</span>
+                </span>
+            </li>
+        </ul>
+        <div class="snackbar__done mdc-snackbar mdc-snackbar--leading" data-mdc-auto-init="MDCSnackbar">
+            <div class="mdc-snackbar__surface">
+                <div class="mdc-snackbar__label" role="status" aria-live="polite">
+                    The specified amount of data was wasted.
+                </div>
+            </div>
+        </div>
+    </main>
+    <div role="progressbar" class="output__progress mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed" data-mdc-auto-init="MDCLinearProgress">
+        <div class="mdc-linear-progress__buffering-dots"></div>
+        <div class="mdc-linear-progress__buffer"></div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+            <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+    </div>
+    <!--[if lt IE 9]> <script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha256-1eSvllkLdrfxD6G8RGF9h+mQuD93Af5+GdPBMNc7uMQ=" crossorigin="anonymous"></script> <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.0.0/material-components-web.min.js" integrity="sha256-EsosgypLTQhhyhYTy8y+WbACaQsmG2Tpvoq1186sISE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/stopwatchjs@0.1.1/stopwatch.min.js" integrity="sha384-YVHQrJc4DzNQAtLqXkQ+16NBc9BuQSEWt5At/0hgASbDJ+659CMhYJeuh2EHtqJ8" crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/humanize-duration/3.20.0/humanize-duration.min.js" integrity="sha256-/Z/Xzo8lduQxHd+muddFmswME6zBTWH+UGYdNEE0upo=" crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/filesize/4.1.2/filesize.min.js" integrity="sha256-znN6cqu0LRpYU05qFKU85KS24giwC5kI6KTtLypmans=" crossorigin="anonymous"></script>
+
+    <script>
+        mdc.autoInit();
+
+        $(".option__mbs").hide();
+
+        Array.prototype.cycle = function(str) {
+            var i = this.indexOf(str);
+            if (i === -1)
+                return undefined;
+            return this[(i + 1) % this.length];
+        };
+
+        var handleTheme = function() {
+            switch (localStorage.getItem("theme")) {
+                case "light":
+                    $(".theme-toggle__svg").html("<path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z\"/><circle cx=\"12\" cy=\"12\" r=\"2.5\"/>");
+                    $("body").removeClass("setting--dark");
+                    break;
+                case "dark":
+                    $(".theme-toggle__svg").html("<path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z\"/>");
+                    $("body").addClass("setting--dark");
+                    break;
+                default:
+                    $(".theme-toggle__svg").html("<path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M11 7l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L13 7h-2zm-.15 5.65L12 9l1.15 3.65h-2.3zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48z\"/>");
+                    var hours = new Date().getHours();
+                    $("body").toggleClass("setting--dark", hours <= 6 ||
+                        hours >= 20 ||
+                        window.matchMedia("(prefers-color-scheme: dark)").matches ||
+                        window.matchMedia("(-ms-high-contrast: white-on-black)").matches);
+            }
+
+        };
+
+        if (["auto", "light", "dark"].indexOf(localStorage.getItem("theme")) === -1)
+            localStorage.setItem("theme", "auto");
+        handleTheme();
+        $("body").addClass("setting--animate-colours");
+        $(".theme-toggle").click(function() {
+            localStorage.setItem("theme", ["auto", "light", "dark"].cycle(localStorage.getItem("theme")));
+            handleTheme();
+        });
+
+        var stopwatch = new Stopwatch();
+        var running = false;
+        var wasted = 0;
+        var xhr = [];
+        var threads = 8;
+        var time = 0;
+        var goal = 0;
+        var chunk = 1500000;
+        var stopped = false;
+        var formatSize = function(size) {
+            var o = filesize(size, {
+                locale: true,
+                output: "object"
+            });
+
+            return (+o.value).toFixed(2) + " " + o.symbol;
+        };
+
+        var getmbs = function() {
+            return $(".option__unlimited").get(0).MDCSwitch.checked ?
+                0 :
+                parseInt($(".option__mbs").get(0).MDCTextField.value);
+        };
+
+        var download = function(id) {
+            if (xhr[id] && xhr[id].status == 200) {
+                wasted += chunk;
+                $(".output__wasted").html(formatSize(wasted));
+                $(".output__speed").html(formatSize(wasted / ((new Date().getTime() / 1000) - (time / 1000))));
+                if (getmbs() !== 0 &&
+                    parseInt($(".output__wasted").html()) /
+                    parseInt($(".option__mbs").get(0).MDCTextField.value) <
+                    1.0) {
+                    $(".output__progress").get(0).MDCLinearProgress.progress =
+                        parseInt($(".output__wasted").html()) /
+                        parseInt($(".option__mbs").get(0).MDCTextField.value);
+                } else {
+                    $(".output__progress").get(0).MDCLinearProgress.progress = 1.0;
+                }
+                if (goal !== 0 && wasted >= goal * 1048576) {
+                    $(".snackbar__done").
+                    get(0).
+                    MDCSnackbar.open();
+                    stop();
+                }
+            }
+            if (running == true)
+                xhr[id] = $.get("https://sao.snu.ac.kr/datawaster/dummy15?" + Math.random(), function() {
+                    return download(id);
+                });
+        };
+
+        var ticker;
+
+        var start = function() {
+            stopwatch.reset();
+            $(".output__time").html("0 seconds");
+            stopwatch.start();
+            ticker = setInterval(function() {
+                return $(".output__time").html(humanizeDuration(stopwatch.value * 1000));
+            }, 1000);
+            threads = $(".option__threads").get(0).MDCSlider.value;
+            $(".option__mbs").get(0).MDCTextField.disabled = true;
+            $(".option__unlimited").get(0).MDCSwitch.disabled = true;
+            $(".option__threads").get(0).MDCSlider.disabled = true;
+            $(".option__unlimited").get(0).MDCSwitch.disabled = true;
+            $(".output__progress").get(0).MDCLinearProgress.determinate =
+                getmbs() !== 0;
+            $(".output__progress").
+            get(0).
+            MDCLinearProgress.open();
+            $(".option__waste > .mdc-fab__label").html("Stop Wasting");
+            $(".option__waste > .mdc-fab__icon").html('<path fill="none" d="M0 0h24v24H0V0z"/><path d="M16 8v8H8V8h8m2-2H6v12h12V6z"/>');
+            running = true;
+            wasted = 0;
+            xhr = [];
+            time = new Date().getTime();
+            goal = getmbs();
+            for (var i = 0; i < threads; i++) download(i);
+        };
+
+        var stop = function() {
+            stopwatch.stop();
+            clearInterval(ticker);
+            running = false;
+            $(".option__mbs").get(0).MDCTextField.disabled = $(".option__unlimited").get(0).MDCSwitch.checked;
+            $(".option__unlimited").get(0).MDCSwitch.disabled = false;
+            $(".option__threads").get(0).MDCSlider.disabled = false;
+            $(".output__progress").
+            get(0).
+            MDCLinearProgress.close();
+            $(".option__waste > .mdc-fab__label").html("Start Wasting");
+            $(".option__waste > .mdc-fab__icon").html('<path fill="none" d="M0 0h24v24H0V0z"/><path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z"/>');
+        };
+
+        var unlimitedChanged = function() {
+            var on = $(".option__unlimited").get(0).MDCSwitch.checked;
+            $(".option__mbs").toggle(!on);
+            $(".option__mbs").get(0).MDCTextField.disabled = on;
+            $(".output__progress").get(0).MDCLinearProgress.determinate = !on;
+        };
+
+        $(".option__unlimited").
+        get(0).
+        MDCSwitch.listen("change", function() {
+            return unlimitedChanged();
+        });
+
+        $(".option__waste").click(function() {
+            if ($(".option__mbs").get(0).MDCTextField.value === "") {
+                $(".option__unlimited").get(0).MDCSwitch.checked = true;
+                unlimitedChanged();
+            }
+            if (running === false && stopped === false) start();
+            else if (stopped === false) stop();
+        });
+    </script>
+
+</body>
+
+</html>

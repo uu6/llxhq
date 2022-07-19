@@ -1,0 +1,24 @@
+{
+    "name": "流量消耗器",
+    "short_name": "流量消耗器",
+    "description": "Nousbuild Website PWA",
+    "icons": [
+        {
+            "src": "https://sdn.geekzu.org/avatar/de2ef9db3e1a34933f20cfd2409cc767?s=192&r=g",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://sdn.geekzu.org/avatar/de2ef9db3e1a34933f20cfd2409cc767?s=512&r=g",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#FFE8E7", //应用加载之前的背景色，用于应用启动时的过渡
+    "theme_color": "#FFE8E7", //主题颜色，用于控制浏览器地址栏着色
+    "display": "standalone", // 定义应用的显示方式
+    "orientation": "portrait",
+    "start_url": "/", // 打开后第一个出现的页面地址
+    "scope": "/" // PWA作用域
+}
