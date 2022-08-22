@@ -148,26 +148,41 @@
                 <span class="nk-menu-text font-weight-bold">流量消耗器</span>
             </div>
             <div class="form-group">
+			<p><a href="https://api.vv1234.cn/JumpURL/share/llxhq_ad_tiaozuan.php" class="nk-menu-link nk-ibx-action-item"><img src="https://wx1.vv1234.cn/2022/08/21/1086301d4ea0e6f9.gif" alt="AD-IMG" title="AD-IMG" /></a></p>
+			
 			<p>Tip:速度不满意？请尝试手工切换节点，加大线程</p>
                 <label class="form-label">下载链接</label>
                 <div class="form-control-wrap">
 		<select  type="text" v-model="set.input"  class="form-control">
 			<option value="https://cachefly.cachefly.net/100mb.test" selected = "selected">Default [推荐]</option>
-			<option value="https://wppkg.baidupcs.com/issue/netdisk/apk/BaiduNetdisk_10.1.02.apk">百度1</option>
-			<option value="https://imeres.baidu.com/imeres/ime-res/guanwang/img/UOS-fcitx-baidupinyin-64.zip">百度2</option>
-			<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里1</option>
-			<option value="https://gw.alipayobjects.com/os/volans-demo/f44c302e-b704-4a70-bcc6-0214e37ca256/MiniProgramStudio-1.17.4.exe">阿里2</option>
-			<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">腾讯</option>
-			<option value="https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg">京东</option>
-			<option value="https://cnbj0.fds.api.xiaomi.com/b2c-data-mishop/9b9d95e1ece27d5ec75205e5fe719ba5.apk">小米</option> 
-			<option value="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/cn/mkt/mobileservices/appgallery/download/PC107f1b3947c942ffaa14334a879065d8.2107261020.exe">华为</option> 
+			
+				<option value="">↓↓ 百度 ↓↓</option>
+			<option value="https://wppkg.baidupcs.com/issue/netdisk/apk/BaiduNetdisk_10.1.02.apk">百度网盘</option>
+			<option value="https://imeres.baidu.com/imeres/ime-res/guanwang/img/UOS-fcitx-baidupinyin-64.zip">百度输入法</option>
+			
+				<option value="">↓↓ 阿里巴巴 ↓↓</option> 
+			<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里图片CDN域名加速</option>
+			<option value="https://gw.alipayobjects.com/os/volans-demo/f44c302e-b704-4a70-bcc6-0214e37ca256/MiniProgramStudio-1.17.4.exe">支付宝开放平台</option>
+				<option value="">↓↓ 腾讯 ↓↓</option> 
+			<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">腾讯游戏</option>
+				<option value="">↓↓ 京东 ↓↓</option> 
+			<option value="https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg">京东商城图片CDN服务</option>
+							<option value="">↓↓  网易 ↓↓</option> 
 			<option value="https://x19.gdl.netease.com/MCLauncher_publish_1.8.0.35383.exe">网易(阿里CDN)</option>
 			<option value="https://mov.bn.netease.com/open-movie/nos/mp4/2015/11/26/SB8ECV1ST_sd.mp4">网易(白云山CDN)</option> 
-			<option value="https://wwwstatic.vivo.com.cn/vivoportal/files/resource/funtouch/1651200648928/images/os2-jude-video.mp4">VIVO_1</option> 
-			<option value="https://imgwsdl.vivo.com.cn/appstore/developer/soft/20210125/202101251051528awqa.apk">VIVO_2</option> 
-			<option value="https://lf9-cdn-tos.bytecdntp.com/cdn/yuntu-index/1.0.4/case/maiteng/detailbg.png">字节跳动</option>
-			<option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7140/MobileMusic7140_0140068.apk">咪咕音乐(中国移动)</option>
+				<option value="">↓↓  VIVO ↓↓</option> 
+			<option value="https://wwwstatic.vivo.com.cn/vivoportal/files/resource/funtouch/1651200648928/images/os2-jude-video.mp4">VIVO官网静态资源</option> 
+			<option value="https://imgwsdl.vivo.com.cn/appstore/developer/soft/20210125/202101251051528awqa.apk">VIVO应用商店</option> 
+				<option value="">↓↓  字节跳动 ↓↓</option> 
+			<option value="https://lf9-cdn-tos.bytecdntp.com/cdn/yuntu-index/1.0.4/case/maiteng/detailbg.png">字节跳动前端公共库</option>
+				<option value="">↓↓  小米 ↓↓</option>
+			<option value="https://cnbj0.fds.api.xiaomi.com/b2c-data-mishop/9b9d95e1ece27d5ec75205e5fe719ba5.apk">小米应用商店</option>
+			<option value="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/cn/mkt/mobileservices/appgallery/download/PC107f1b3947c942ffaa14334a879065d8.2107261020.exe">华为</option> 
+				<option value="">↓↓  中国移动 ↓↓</option>	
+			<option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7140/MobileMusic7140_0140068.apk">咪咕音乐</option>
+				<option value="">↓↓  中国电信 ↓↓</option>	
 			<option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/5ca444c333bf4727babc7d154aabe559.mp4">天翼云(中国电信)</option>
+				<option value="">↓↓  国内其他大厂 ↓↓</option>	
 			<option value="https://dh5.cntv.myhwcdn.cn/asp/h5e/hls/1200/0303000a/3/default/ec48b9f8c76e49af842d4942914ad663/1.ts">CCTV</option>
 			<option value="https://714-3.vod.tv.itc.cn/sohu/ifox/Lzk5LzI1Mi8iOJyyPTwssSSquySopbGYrBm6qDQjlzI2s5MyHpU/SHPlayer_3.28_18312.dmg">搜狐</option> 
 			<option value="http://i.apps.sina.cn/tqt/zip/com.sina.tianqitong_6.1892_2019.07.29.17.54.18.apk">新浪</option>
@@ -178,7 +193,12 @@
 			<option value="https://kodo-toolbox.qiniu.com/kodo-browser-Linux-x64-v1.0.17.zip">七牛云</option>
 			<option value="https://picture.xianniu.com/pc/download/3.8.0.4/xianniusetup.3.8.0.4.exe">鲜牛加速器(华为云CDN)</option>
 			<option value="https://gh.con.sh/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v2.21.12/Waifu2x-Extension-GUI-v2.21.12-Portable.7z">GitHub文件加速(cloudflare CDN)</option>
+				<option value="">↓↓  海外优选节点 ↓↓</option>	
+			<option value="https://cachefly.cachefly.net/100mb.test" >Cachefly 100MB</option>
 			<option value="https://speed.cloudflare.com/__down?bytes=25000000">cloudflare</option>
+			<option value="https://sgp-ping.vultr.com/vultr.com.1000MB.bin">Vultr 1G(新加坡)</option>
+			<option value="https://nj-us-ping.vultr.com/vultr.com.1000MB.bin">Vultr 1G(纽约)</option>
+			<option value="https://speedtest.tokyo2.linode.com/100MB-tokyo2.bin">Linode 100MB(日本省东京市)</option>
 			
 			<option value="">↓↓ 如需自定义请直接在下方填写资源链接 ↓↓</option></select>
 		 <input style="" type="text" v-model="set.input" placeholder="下载链接" class="form-control" autocomplete="off">
@@ -226,16 +246,18 @@
     </div>
     <div class="card card-preview">
         <div class="card-inner">
+		
             <h6><em class="icon ni ni-info"></em> 工具说明</h6>
             <div class="accordion-inner">
+			
 				<p>多线程消耗流量,web版流量杀手</p>
                 <p>此工具可以以浪费的形式消耗你的流量</p>
 			
 				<p>
 				Tips: 如手机套餐内含头条系，阿里系，百度系等定向流量，填写免流量的资源URL，即可直接消耗免费的定向流量</p>
+				<p>如果是要消耗机场流量,建议使用海外节点,速度可能会更快</p>
 				 <p>注：虽支持可自定义下载地址 但无法请求跨域链接</p>
 				 <p>	
-			
 				 <hr>
 				 
 				 <p> 感谢您对流量消耗事业做出的贡献!</p>
@@ -249,7 +271,7 @@
 		   </p>
 		  <a href="old-index.php" class="nk-menu-link nk-ibx-action-item">→ 点我切换回旧版 ←</a>
 			 <hr>					
-	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20220701</a>  </p>
+	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20220822</a>  </p>
 	 <p>功能优化:对于网络波动及第三方资源访问故障等网络错误问题造成的执行中断,改为仍然强制执行!</p>
 	 	 <p>为降低终端设备CPU占用,暂时关闭网页特效,默认线程调整为1</p>	 
 		 <hr>	
