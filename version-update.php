@@ -36,11 +36,18 @@
 	<h1>流量消耗器</h1>
 	<h3> 流量统计:</h3>
 	<p><script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/JjhvoI5bfYbANJBZ/quote.js?theme=2&col=true&f=12&badge=icon_1&icon=left"></script></p>
+	<h2> <a href='https://api.vv1234.cn/llxhq'>返回主页</a></h2>
 		<h3>打包下载:</h3>
 		为了方便各位动手能力强的大佬们自行部署等个性化需求,暂时托管到了GitHub,方便各位大佬打包下载.</br>
 		  <a href='https://github.com/uu6/llxhq'>如果需要扒拉代码,建议直接GitHub打包下载 https://github.com/uu6/llxhq</a></div>
+		  
 		<h3> 更新说明:</h3>
-		<p>20220822: 对节点进行分类,并新增部分节点.
+		<p>20231117: 日常更新，更新/移除部分失效资源链接，优化国内部分地区访问速度</p>
+	 	<p>20221212: 更新/移除部分失效资源链接，增加QQ/微信客户端访问拦截</p>
+		<p>20221201: 新增中国联通，网易官网等资源</p>
+	    <p>20221014: 新增和彩云(中国移动云盘)，咪咕视频等资源</p>
+	    <p>20220901：节点优化:应酷安基友反馈，新增节点若干，含B站.</p>
+		<p>20220822: 对节点进行分类,并新增部分节点.	</p>
 		</p>
 		<p>20220719: 为了方便各位动手能力强的大佬们自行部署等个性化需求,暂时托管到了GitHub,方便各位大佬打包下载.
 		</p>
