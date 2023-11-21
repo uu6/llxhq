@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="zh" class="js">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>流量消耗器 </title>
-    <meta name="keywords" content="流量消耗器,流量杀手">
+    <title>流量消耗器  https://api.vv1234.cn/llxhq/ </title>
+    <meta name="keywords" content="流量消耗器,流量杀手,https://api.vv1234.cn/llxhq/">
     <meta name="description" content="流量消耗器，web版流量杀手，https://api.vv1234.cn/llxhq/。">
     <link rel="stylesheet" href="css/dashlite.css">
 	<link rel="stylesheet" href="css/style.css?v=20220626">
@@ -19,21 +18,7 @@
 		});
 	}
 	</script>
-	<script src="//api.vv1234.cn/ip/api.php?action=getip&code=js&token=test&from=llxhq"></script>
-	<script src="//v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-	<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-	<script>LA.init({id: "JjhvoI5bfYbANJBZ",ck: "JjhvoI5bfYbANJBZ",autoTrack:true,hashMode:true})</script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745983596040533"
-	     crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114909353-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-114909353-1');
-    </script>
+
 
 </head>
 <body class="nk-body npc-invest bg-lighter " style="cursor:pointer">
@@ -83,13 +68,13 @@
 					    </a>
 					</li>
 					<li class="nk-menu-item ">
-					    <a href="#" class="nk-menu-link nk-ibx-action-item">
+					    <a href="//vv1234.cn" class="nk-menu-link nk-ibx-action-item">
 					        <em class="icon ni ni-heart"></em>
-					        <span class="nk-menu-text">占位占位</span>
+					        <span class="nk-menu-text">零玖博客</span>
 					    </a>
 					</li>
                     <li class="nk-menu-item ">
-                        <a href="//vv1234.cn" class="nk-menu-link nk-ibx-action-item">
+                        <a href="https://wj.qq.com/s2/11351944/d45f" class="nk-menu-link nk-ibx-action-item">
                             <em class="icon ni ni-comments"></em>
                             <span class="nk-menu-text">留言反馈</span>
                         </a>
@@ -148,60 +133,102 @@
                 <span class="nk-menu-text font-weight-bold">流量消耗器</span>
             </div>
             <div class="form-group">
-			<p><a href="https://api.vv1234.cn/JumpURL/share/llxhq_ad_tiaozuan.php" class="nk-menu-link nk-ibx-action-item"><img src="https://wx1.vv1234.cn/2022/08/21/1086301d4ea0e6f9.gif" alt="AD-IMG" title="AD-IMG" /></a></p>
+              <p> <b>声明</b>：本工具仅自用，并无后门，且工作原理很简单，就是js来替你循环下载一些资源文件而已，不放心用可以不用哈，不用非得踩一脚说我会往你手机下载木马病毒！</p>
+		    
+                
+			<p><a href="https://api.vv1234.cn/JumpURL/share/llxhq_ad_tiaozuan.php" class="nk-menu-link nk-ibx-action-item"><img src="https://wx1.vv1234.cn/2022/08/21/1086301d4ea0e6f9.gif" alt="AD-IMG" title="AD-IMG" width="300" height="30"  /></a></p>
 			
-			<p>Tip:速度不满意？请尝试手工切换节点，加大线程</p>
-                <label class="form-label">下载链接</label>
+			<p>Tip:速度不满意？请尝试手工切换节点，加大线程<br/>带的箭头↓👇的为主分类，请点击箭头下方的内容</p>
+                <label class="form-label"></label>
+          <h6><em class="icon ni ni-info"></em> 下载链接</h6>        
                 <div class="form-control-wrap">
-		<select  type="text" v-model="set.input"  class="form-control">
-			<option value="https://cachefly.cachefly.net/100mb.test" selected = "selected">Default [推荐]</option>
-			
-				<option value="">↓↓ 百度 ↓↓</option>
-			<option value="https://wppkg.baidupcs.com/issue/netdisk/apk/BaiduNetdisk_10.1.02.apk">百度网盘</option>
-			<option value="https://imeres.baidu.com/imeres/ime-res/guanwang/img/UOS-fcitx-baidupinyin-64.zip">百度输入法</option>
-			
-				<option value="">↓↓ 阿里巴巴 ↓↓</option> 
-			<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里图片CDN域名加速</option>
-			<option value="https://gw.alipayobjects.com/os/volans-demo/f44c302e-b704-4a70-bcc6-0214e37ca256/MiniProgramStudio-1.17.4.exe">支付宝开放平台</option>
-				<option value="">↓↓ 腾讯 ↓↓</option> 
-			<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">腾讯游戏</option>
-				<option value="">↓↓ 京东 ↓↓</option> 
-			<option value="https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg">京东商城图片CDN服务</option>
-							<option value="">↓↓  网易 ↓↓</option> 
-			<option value="https://x19.gdl.netease.com/MCLauncher_publish_1.8.0.35383.exe">网易(阿里CDN)</option>
-			<option value="https://mov.bn.netease.com/open-movie/nos/mp4/2015/11/26/SB8ECV1ST_sd.mp4">网易(白云山CDN)</option> 
-				<option value="">↓↓  VIVO ↓↓</option> 
-			<option value="https://wwwstatic.vivo.com.cn/vivoportal/files/resource/funtouch/1651200648928/images/os2-jude-video.mp4">VIVO官网静态资源</option> 
-			<option value="https://imgwsdl.vivo.com.cn/appstore/developer/soft/20210125/202101251051528awqa.apk">VIVO应用商店</option> 
-				<option value="">↓↓  字节跳动 ↓↓</option> 
-			<option value="https://lf9-cdn-tos.bytecdntp.com/cdn/yuntu-index/1.0.4/case/maiteng/detailbg.png">字节跳动前端公共库</option>
-				<option value="">↓↓  小米 ↓↓</option>
-			<option value="https://cnbj0.fds.api.xiaomi.com/b2c-data-mishop/9b9d95e1ece27d5ec75205e5fe719ba5.apk">小米应用商店</option>
-			<option value="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/cn/mkt/mobileservices/appgallery/download/PC107f1b3947c942ffaa14334a879065d8.2107261020.exe">华为</option> 
-				<option value="">↓↓  中国移动 ↓↓</option>	
-			<option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7140/MobileMusic7140_0140068.apk">咪咕音乐</option>
-				<option value="">↓↓  中国电信 ↓↓</option>	
+		<select  type="text" v-model="set.input"  class="form-control" autocomplete='new-password'>
+			<option value="https://cachefly.cachefly.net/200mb.test" selected = "selected">默认 [如需其他请下拉选择节点或直接输入资源链接] </option>
+			  
+					<option value="">👇👇  中国移动 👇👇</option>	
+			<option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7380/MobileMusic7380_014000D.apk">咪咕音乐（芝麻卡推荐）</option>
+		    
+				<option value="">👇👇  中国电信 👇👇</option>	
 			<option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/5ca444c333bf4727babc7d154aabe559.mp4">天翼云(中国电信)</option>
-				<option value="">↓↓  国内其他大厂 ↓↓</option>	
+			
+				<option value="">👇👇  中国联通 👇👇</option>	
+			<option value="https://m1.ad.10010.com/small_video/uploadImg/1669798519261.png"> 联通官网静态资源1</option>
+		  
+		  	<option value="">👇👇 百度 👇👇</option>
+		       <option value="https://cdn-pcagamecenter.dsgame.iqiyi.com/upload/2/pca/20230228111207/1/iqiyigame13.4.1.0.exe">爱奇艺</option>  
+		    	<option value="https://edu-wenku.bdimg.com/v1/na/0807/PC%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%89%88%E6%9C%AC%E5%8C%85/%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%20Setup%201.2.7.exe">百度文库</option>
+				<option value="https://fanyi-cdn.cdn.bcebos.com/static/api-ssr/static/js/2.1c6a3a74.chunk.js"> 百度对象存储资源</option>
+			
+				<option value="">👇👇 阿里系 👇👇</option> 
+			<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里图片CDN域名加速</option>
+			<option value="https://mdn.alipayobjects.com/ind_developertool/afts/file/A*fSAmSbgxLosAAAAAAAAAAAAADlx-AQ?af_fileName=AlipayKeyTool-2.0.3.dmg">支付宝开放平台1</option>
+			  <option value="https://gw.alipayobjects.com/render/p/yuyan/180020010001210191/umi.9f3e4149.js">支付宝开放平台2</option>
+             <option value="https://gw.alicdn.com/tfscom/TB1fASCxhjaK1RjSZKzXXXVwXXa.jpg">阿里系Gw</option>
+                                
+                                <option value="">👇👇 腾讯 👇👇</option> 
+			<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">腾讯游戏-静态资源加速1</option>
+		 	<option value="https://wegame.gtimg.com/g.55555-r.c4663/wegame-home/sc02-03.514d7db8.png">Wegame-静态资源加速</option>
+			
+				<option value="">👇👇 京东 👇👇</option> 
+			<option value="https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg">京东商城图片CDN服务</option>
+							<option value="">👇👇  网易 👇👇</option> 
+			<option value="https://n.v.netease.com/2022/1206/de4b6add85f1537da839bdb5a501253d.mp4">逆水寒官网静态资源</option>
+			<option value="https://nsh.gdl.netease.com/NGP/NGP_NSH_2.0.81143.exe">逆水寒客户端</option>
+			
+			<option value="https://x19.gdl.netease.com/MCLauncher_1.10.0.15222.exe">MCLauncher网易版(阿里CDN)</option>
+			<option value="https://mov.bn.netease.com/open-movie/nos/mp4/2015/11/26/SB8ECV1ST_sd.mp4">网易公开课(白云山CDN)</option> 
+			<option value="https://nsh.gdl.netease.com/cloudgame_macos/NSH_cloud_game_for_mac_1.4.6_2023_06-02-11.dmg">网易云游戏</option> 
+		
+				<option value="">👇👇  蓝绿大厂 👇👇</option> 
+			<option value="https://wwwstatic.vivo.com.cn/vivoportal/files/resource/funtouch/1651200648928/images/os2-jude-video.mp4">VIVO官网静态资源</option> 
+			 <option value="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/9fb472f.js">OPPP商城静态资源</option>
+			
+			<option value="https://imgwsdl.vivo.com.cn/appstore/developer/soft/20210125/202101251051528awqa.apk">VIVO应用商店</option> 
+				<option value="">👇👇  字节跳动 👇👇</option> 
+			<option value="https://lf9-cdn-tos.bytecdntp.com/cdn/yuntu-index/1.0.4/case/maiteng/detailbg.png">字节CDN资源</option>
+			<option value="https://www.douyin.com/download/pc/obj/douyin-pc-client/7044145585217083655/releases/11259813/3.0.1/win32-ia32/douyin-downloader-v3.0.1-win32-ia32-douyinDownload1.exe">抖音Win客户端</option>
+			<option value="https://lf9-apk.ugapk.cn/package/apk/news_article/3239_9550/news_article_article_download_page_v3239_9550_92ee_1699952731.apk">今日头条安卓客户端</option>
+			<option value="https://sf3-cn.feishucdn.com/obj/ee-appcenter/9323162e/Feishu-darwin_x64-7.4.9-signed.dmg">飞书Mac客户端</option>
+			
+				<option value="">👇👇  小米 👇👇</option>
+			<option value="https://cnbj0.fds.api.xiaomi.com/b2c-data-mishop/9b9d95e1ece27d5ec75205e5fe719ba5.apk">小米应用商店</option>
+		
+				
+				<option value="">👇👇  哔哩哔哩 👇👇</option>	
+			<option value="https://activity.hdslb.com/blackboard/static/20210604/4d40bc4f98f94fbc71c235832ce3efd4/hJEhL6jGOY.zip">上海灵羊1</option>
+			 
+				<option value="">👇👇  华为 👇👇</option>
+			<option value="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p60-pro/images/camera/huawei-p60-pro-camera-ui.mp4">华为P60-pro素材</option> 
+			    <option value="">👇👇  锤子 👇👇</option>
+			<option value="https://static.smartisanos.cn/common/video/production/ocean/os-1-1710.mp4">Smartisan OS 官网公共资源</option> 
+			
+			
+			
+			    	<option value="">👇👇 拼多多 👇👇</option>
+		   <option value="https://funimg.pddpic.com/c3affbeb-9b31-4546-b2df-95b62de81639.png.slim.png">拼多多H5官网静态资源-图像小文件</option> 
+	     <option value="https://t00img.yangkeduo.com/chat/images/2022-12-12/79e0a4684de85c7b59f797819260be98.jpeg">拼多多IMG/CDN资源文件</option> 
+	
+				<option value="">👇👇  国内其他大厂 👇👇</option>	
 			<option value="https://dh5.cntv.myhwcdn.cn/asp/h5e/hls/1200/0303000a/3/default/ec48b9f8c76e49af842d4942914ad663/1.ts">CCTV</option>
-			<option value="https://714-3.vod.tv.itc.cn/sohu/ifox/Lzk5LzI1Mi8iOJyyPTwssSSquySopbGYrBm6qDQjlzI2s5MyHpU/SHPlayer_3.28_18312.dmg">搜狐</option> 
-			<option value="http://i.apps.sina.cn/tqt/zip/com.sina.tianqitong_6.1892_2019.07.29.17.54.18.apk">新浪</option>
+	 
 			<option value="https://cdn.aixifan.com/downloads/AcFun-acfunh5-release-6.62.0.1238_x64_60b608.apk">AcFun</option>
-			<option value="http://image.uc.cn/s/uae/g/2i/uninstallpg/Quark_Browser_unins.apk">Quark_Browser</option>
-			<option value="https://dl.pddpic.com/android_dev/2021-02-08/4ff25ce6148aa99aeeba723b5891ae72.apk">拼多多</option>
-			<option value="https://sta-op.douyucdn.cn/vod-index/2022/06/22/848adf3ae99d2be506026380c2ad42c1.png">斗鱼</option>
-			<option value="https://kodo-toolbox.qiniu.com/kodo-browser-Linux-x64-v1.0.17.zip">七牛云</option>
-			<option value="https://picture.xianniu.com/pc/download/3.8.0.4/xianniusetup.3.8.0.4.exe">鲜牛加速器(华为云CDN)</option>
+		 
+			<option value="https://shark2.douyucdn.cn/front-publish/live-master/lib/vendor-room_4e3a873.js">斗鱼CDN-小文件</option>
+			<option value="https://dn-mars-assets.qbox.me/qiniulog/img-slogan-white-en.png">七牛云</option>
+			<option value="https://picture.xianniu.com/pc/download/4.6.9.3/xianniusetup.4.6.9.3.exe">鲜牛加速器(华为云CDN)</option>
 			<option value="https://gh.con.sh/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v2.21.12/Waifu2x-Extension-GUI-v2.21.12-Portable.7z">GitHub文件加速(cloudflare CDN)</option>
-				<option value="">↓↓  海外优选节点 ↓↓</option>	
+				<option value="">👇👇  海外优选节点 👇👇</option>	
 			<option value="https://cachefly.cachefly.net/100mb.test" >Cachefly 100MB</option>
 			<option value="https://speed.cloudflare.com/__down?bytes=25000000">cloudflare</option>
 			<option value="https://sgp-ping.vultr.com/vultr.com.1000MB.bin">Vultr 1G(新加坡)</option>
 			<option value="https://nj-us-ping.vultr.com/vultr.com.1000MB.bin">Vultr 1G(纽约)</option>
 			<option value="https://speedtest.tokyo2.linode.com/100MB-tokyo2.bin">Linode 100MB(日本省东京市)</option>
+			<option value="https://emp.bbci.co.uk/emp/dashjs/3.2.0-8/dash.all.min.js">BBC中文网</option>
+					<option value="">👇👇  其他并发测试 👇👇</option>	
+			<option value="https://api.vv1234.cn/bing/api.php?idx=-1" >必应壁纸API</option>
 			
-			<option value="">↓↓ 如需自定义请直接在下方填写资源链接 ↓↓</option></select>
-		 <input style="" type="text" v-model="set.input" placeholder="下载链接" class="form-control" autocomplete="off">
+			</select>
+		 <input style="" type="text" v-model="set.input" placeholder="直接在输入框内输入文件资源的下载链接即可，适用于未开启防盗链的直链资源，不支持网盘资源解析" class="form-control" autocomplete="off">
            
 				</div>
             </div>
@@ -217,7 +244,8 @@
                 <div class="preview-block">
                     <div class="custom-control custom-switch">
                         <input type="checkbox" class="custom-control-input" v-model="set.infinite" id="customSwitch2">
-                        <label class="custom-control-label" for="customSwitch2">无限循环</label>
+                         <label class="custom-control-label" for="customSwitch2">无限循环</label>
+                       
                     </div>
                 </div>
             </div>
@@ -241,16 +269,14 @@
                     <div class="stat-title">运行时长</div>
                     <div class="stat-value">{{secToTime(spend)}}</div>
                 </div>
-            </div>
+                </div> <br/><p class="stat-title"  id="result">...正在努力加载用户侧网络延时情况....</p>
         </div>
     </div>
     <div class="card card-preview">
         <div class="card-inner">
-		
-            <h6><em class="icon ni ni-info"></em> 工具说明</h6>
+	   <h6><em class="icon ni ni-info"></em> 工具说明</h6>
             <div class="accordion-inner">
-			
-				<p>多线程消耗流量,web版流量杀手</p>
+		   	<p>多线程消耗流量,web版流量杀手</p>
                 <p>此工具可以以浪费的形式消耗你的流量</p>
 			
 				<p>
@@ -260,32 +286,42 @@
 				 <p>	
 				 <hr>
 				 
+				 
 				 <p> 感谢您对流量消耗事业做出的贡献!</p>
-				 <p>  如您为移动19元芝麻卡套餐用户，欢迎加企鹅群 <a href="//api.vv1234.cn/JumpURL/share/jiaqun178317823.php"> 178317823 </a> 讨论交流</p>
+				 <p>  如您为移动19元芝麻卡套餐用户，欢迎加企鹅群 <a href="//api.vv1234.cn/JumpURL/share/jiaqun178317823.php" target="_blank"> 178317823 </a> 讨论交流</p>
+				 
+					 
+				 
             <p>您的访问信息如下：</p>
 			<li class="nk-menu-item ">
 		    <p class="text-danger"><script>ipinfo()</script></p> 
 		   <p>
 		   </li>
-		   <img src="https://ip.vv1234.cn/ipx/" onError="this.src='https://tool.lu/netcard/'">
+		  <a href="https://ip.vv1234.cn" target="_blank"><img src="https://ip.vv1234.cn/ipx/" onError="this.src='https://api.szfx.top/info-card/?word=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E8%AE%BF~'"></a> 
 		   </p>
-		  <a href="old-index.php" class="nk-menu-link nk-ibx-action-item">→ 点我切换回旧版 ←</a>
-			 <hr>					
-	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20220822</a>  </p>
-	 <p>功能优化:对于网络波动及第三方资源访问故障等网络错误问题造成的执行中断,改为仍然强制执行!</p>
-	 	 <p>为降低终端设备CPU占用,暂时关闭网页特效,默认线程调整为1</p>	 
+		  <a href="old-index.php" target="_blank" class="nk-menu-link nk-ibx-action-item">→ 点我切换回旧版 ←</a>
+			 <hr>	
+			   
+	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20231117</a>  </p>
+	   <p> 日常更新：更新/移除部分失效资源链接，优化国内部分地区访问速度</p>
+	 
+	  <p>功能优化:对于网络波动及第三方资源访问故障等网络错误问题造成的执行中断,改为仍然强制执行!</p>
+	 	 <p>为降低终端设备CPU占用,暂时关闭网页特效,默认线程调整为10</p>	 
 		 <hr>	
 	 <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/JjhvoI5bfYbANJBZ/quote.js?theme=0&f=12&display=1,1,1,1,0,1,1,1"></script>
+	 <br/>
+	   
+	   
 	 	</div>
         </div>
     </div>
 </div>
 </div>
 
-            <div class="mt-5 text-center">
+       <div class="mt-5 text-center">
            <p id='hitokoto' class="text-gray"></p>
      <a href="https://api.vv1234.cn/llxhq/" class="btn btn-sm btn-outline-light ">
-           <em class="icon ni ni-heart"> 收藏本页</em> <em class="icon ni ni-heart"> </em>
+           <em class="icon ni ni-heart"> 收藏本页地址</em> <em class="icon ni ni-heart"> </em>
 		   </a>
 		   <br/>
 		    
@@ -299,7 +335,7 @@
         <div class="nk-footer nk-footer-fluid bg-lighter">
     <div class="container-xl">
         <div class="nk-footer-wrap">
-            <div class="nk-footer-copyright"> &copy; 2022 <a href='https://vv1234.cn/archives/750.html'>零玖博客(点我立即下载本站源码) </a>
+            <div class="nk-footer-copyright"> &copy; 2022 <a href='https://vv1234.cn/archives/750.html' target="_blank">零玖博客(点我立即下载本站源码) </a>
 	          </div>
 		  </div>
     </div>
@@ -337,11 +373,11 @@ new Vue({
     el: '#app',
     data: {
         set: {
-            input: 'https://cachefly.cachefly.net/100mb.test',
+            input: 'https://cachefly.cachefly.net/200mb.test',
             output: '',
             infinite: true,
             status: false,
-            thread: 1,
+            thread: 10,
         },
         tasks: [],
         speed: '0.00B/s',
@@ -456,7 +492,29 @@ new Vue({
             return filesize.replace(/\s([K|M|G|B]*)B{0,1}/, '$1/s')
         }
     },
-})
+});
+
+// 网络延迟输出
+ function testLatency() {
+      var resultElement = document.getElementById('result');
+     var urlToTest = 'https://sqimg.qq.com/qq_product_operations/nettest/index2.html';
+      function updateResult(latency) {
+        resultElement.innerText = '实时网络延迟：' + latency + ' 毫秒';
+      }
+     var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          var endTime = new Date().getTime();
+          var latency = endTime - startTime;
+          updateResult(latency);
+        }
+      };
+
+      var startTime = new Date().getTime();
+      xhr.open('GET', urlToTest, true);
+      xhr.send();
+    }
+     setInterval(testLatency, 3000);  
 </script>
 
 <script>document.onkeydown = function(){
@@ -491,10 +549,37 @@ return false;
 }
 </script>  
 
+<!-- 网络延时输出 -->
+  <script>
+   
+  </script>
+
+
+
+
+<!-- 流量统计代码  20231117 放到最后延迟加载，避免页面长时间无响应  -->
+	<script src="//api.vv1234.cn/ip/api.php?action=getip&code=js&token=test&from=llxhq"></script>
+	<script src="//v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+	<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+	<script>LA.init({id: "JjhvoI5bfYbANJBZ",ck: "JjhvoI5bfYbANJBZ",autoTrack:true,hashMode:true})</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745983596040533"
+	     crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114909353-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-114909353-1');
+    </script>
+
 <!-- 
 //临时关闭网页特效，以降低客户机负载
-<script src="//wx1.vv1234.cn/o_1bdgnn8ljls4ihk1aq6cjq1fooa.js"></script>
+<script src="//wx1.vv1234.cn/o_1bdgnn8ljls4ihk1aq6cjq1fooa.js"></script> -->
+
 <script src="//api.vv1234.cn/js/fuqiang.js?20220629"></script>
+<!-- 
 <script src="//api.vv1234.cn/js/luoye.js?20220629"></script>
 <script type="text/javascript">jQuery(document).ready(function($){
 $('body').wpSuperSnow({
