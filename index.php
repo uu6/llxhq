@@ -143,90 +143,77 @@
           <h6><em class="icon ni ni-info"></em> 下载链接</h6>        
                 <div class="form-control-wrap">
 		<select  type="text" v-model="set.input"  class="form-control" autocomplete='new-password'>
-			<option value="https://cachefly.cachefly.net/200mb.test" selected = "selected">默认 [如需其他请下拉选择节点或直接输入资源链接] </option>
-			  
-					<option value="">👇👇  中国移动 👇👇</option>	
-			<option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7380/MobileMusic7380_014000D.apk">咪咕音乐（芝麻卡推荐）</option>
-		    
-				<option value="">👇👇  中国电信 👇👇</option>	
-			<option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/5ca444c333bf4727babc7d154aabe559.mp4">天翼云(中国电信)</option>
-			
-				<option value="">👇👇  中国联通 👇👇</option>	
-			<option value="https://m1.ad.10010.com/small_video/uploadImg/1669798519261.png"> 联通官网静态资源1</option>
-		  
-		  	<option value="">👇👇 百度 👇👇</option>
-		       <option value="https://cdn-pcagamecenter.dsgame.iqiyi.com/upload/2/pca/20230228111207/1/iqiyigame13.4.1.0.exe">爱奇艺</option>  
-		    	<option value="https://edu-wenku.bdimg.com/v1/na/0807/PC%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%89%88%E6%9C%AC%E5%8C%85/%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%20Setup%201.2.7.exe">百度文库</option>
-				<option value="https://fanyi-cdn.cdn.bcebos.com/static/api-ssr/static/js/2.1c6a3a74.chunk.js"> 百度对象存储资源</option>
-			
-				<option value="">👇👇 阿里系 👇👇</option> 
+			<option value="https://cachefly.cachefly.net/50mb.test" selected = "selected">默认 [如需其他请下拉选择节点或直接输入资源链接] </option>
+					<optgroup label="👇👇  中国移动 👇👇">
+			<option value="https://d.musicapp.migu.cn/upload/fbpt_rsync_apps/local/signed/MobileMusic7411/MobileMusic7411_014000D.apk">咪咕音乐</option>
+		  <option value="https://img.mcloud.139.com/material_prod/material_media/20221128/1669626861087.png">和彩云1</option>
+			<option value="https://plaza.cmgame.com:8443/resource/upload/records/tvapk/apk/6.9.1.0_0_5132_2021-12-29_10011000000_xw_sec_signed_signed_signed.apk">咪咕快游1</option>
+			<option value="https://pc-dl.migufun.com:8443/channelpackage/mgame-2djSBy.exe">咪咕快游2</option>
+		 	<option value="https://freeserver.migufun.com/resource/beta/video/system/20210924112351666.mp4">咪咕快游3</option>
+		 	<option value="https://freeserver.migufun.com/resource/beta/apk/20231114094513/MiguPlay-V3.69.1.1_miguzsj.apk">咪咕快游4</option>
+                	<optgroup label="👇👇  中国电信 👇👇">
+			<option value="https://desk.ctyun.cn/desktop/software/clientsoftware/download/5961fa22ee369eba433da6b0247eb11f">天翼云1</option>
+			<option value="https://desk.ctyun.cn:8999/desktop-prod/software/android_client/20/64/102010101/clouddesktoc_phone_2.1.1_452_prod_102010101_2.1.1_signed.apk">天翼云2</option>
+		    <option value="https://desk.ctyun.cn/desktop/software/clientsoftware/download/50218cd4d2286623049e374061cffd0e">天翼云3-翼加密客户端</option>
+		     <option value="https://desk.ctyun.cn/desktop/software/clientsoftware/download/ff3e71dcc21152307f54700c62e5aef6">天翼云应用市场</option>
+    		    <optgroup label="👇👇  中国联通 👇👇">
+			<option value="https://listen.10155.com/listener/womusic-bucket/90115000/mv_vod/volte_mp4/20230215/1625752132487675906.mp4"> 联通电视</option>
+    		 <option value="https://m1.ad.10010.com/small_video/uploadImg/1669798519261.png"> 联通官网静态资源1</option>
+					<optgroup label="👇👇 百度 👇👇">
+		       <option value="https://bdcdncnc.inter.71edge.com/cdn/pca/20231130/10.9.1.7348/channel/1701328986348/IQIYIsetup_z43.exe">爱奇艺</option>  
+		        <option value="https://fanyi-cdn.cdn.bcebos.com/static/api-ssr/static/js/2.1c6a3a74.chunk.js"> 百度对象存储资源</option>
+					<optgroup label="👇👇 阿里系 👇👇">
 			<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里图片CDN域名加速</option>
 			<option value="https://mdn.alipayobjects.com/ind_developertool/afts/file/A*fSAmSbgxLosAAAAAAAAAAAAADlx-AQ?af_fileName=AlipayKeyTool-2.0.3.dmg">支付宝开放平台1</option>
 			  <option value="https://gw.alipayobjects.com/render/p/yuyan/180020010001210191/umi.9f3e4149.js">支付宝开放平台2</option>
              <option value="https://gw.alicdn.com/tfscom/TB1fASCxhjaK1RjSZKzXXXVwXXa.jpg">阿里系Gw</option>
-                                
-                                <option value="">👇👇 腾讯 👇👇</option> 
+                    <optgroup label="👇👇 腾讯 👇👇">
 			<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif?0.3190485611376561">腾讯游戏-静态资源加速1</option>
 		 	<option value="https://wegame.gtimg.com/g.55555-r.c4663/wegame-home/sc02-03.514d7db8.png">Wegame-静态资源加速</option>
-			
-				<option value="">👇👇 京东 👇👇</option> 
+					<optgroup label="👇👇 京东 👇👇">
 			<option value="https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg">京东商城图片CDN服务</option>
-							<option value="">👇👇  网易 👇👇</option> 
+					<optgroup label="👇👇  网易 👇👇">
 			<option value="https://n.v.netease.com/2022/1206/de4b6add85f1537da839bdb5a501253d.mp4">逆水寒官网静态资源</option>
 			<option value="https://nsh.gdl.netease.com/NGP/NGP_NSH_2.0.81143.exe">逆水寒客户端</option>
-			
 			<option value="https://x19.gdl.netease.com/MCLauncher_1.10.0.15222.exe">MCLauncher网易版(阿里CDN)</option>
 			<option value="https://mov.bn.netease.com/open-movie/nos/mp4/2015/11/26/SB8ECV1ST_sd.mp4">网易公开课(白云山CDN)</option> 
 			<option value="https://nsh.gdl.netease.com/cloudgame_macos/NSH_cloud_game_for_mac_1.4.6_2023_06-02-11.dmg">网易云游戏</option> 
-		
-				<option value="">👇👇  蓝绿大厂 👇👇</option> 
+					<optgroup label="👇👇  蓝绿大厂 👇👇">
 			<option value="https://wwwstatic.vivo.com.cn/vivoportal/files/resource/funtouch/1651200648928/images/os2-jude-video.mp4">VIVO官网静态资源</option> 
 			 <option value="https://dsfs.oppo.com/oppo/shop-pc-v2/main/js/9fb472f.js">OPPP商城静态资源</option>
-			
 			<option value="https://imgwsdl.vivo.com.cn/appstore/developer/soft/20210125/202101251051528awqa.apk">VIVO应用商店</option> 
-				<option value="">👇👇  字节跳动 👇👇</option> 
+					<optgroup label="👇👇  字节跳动 👇👇">
 			<option value="https://lf9-cdn-tos.bytecdntp.com/cdn/yuntu-index/1.0.4/case/maiteng/detailbg.png">字节CDN资源</option>
+				<option value="https://lf9-apk.ugapk.cn/package/apk/bgame/1593_112/bgame_operation_update_2508_v1593_112_63aa_1693882489.apk?v=1693882509">字节CDN资源2</option>
 			<option value="https://www.douyin.com/download/pc/obj/douyin-pc-client/7044145585217083655/releases/11259813/3.0.1/win32-ia32/douyin-downloader-v3.0.1-win32-ia32-douyinDownload1.exe">抖音Win客户端</option>
-			<option value="https://lf9-apk.ugapk.cn/package/apk/news_article/3239_9550/news_article_article_download_page_v3239_9550_92ee_1699952731.apk">今日头条安卓客户端</option>
+			<option value="https://lf9-apk.ugapk.cn/package/apk/news_article/1001_9660/news_article_tt_wtt_qrcod_v1001_9660_4cd4_1706007871.apk?v=1706007877
+">今日头条安卓客户端</option>
 			<option value="https://sf3-cn.feishucdn.com/obj/ee-appcenter/9323162e/Feishu-darwin_x64-7.4.9-signed.dmg">飞书Mac客户端</option>
-			
-				<option value="">👇👇  小米 👇👇</option>
-			<option value="https://cnbj0.fds.api.xiaomi.com/b2c-data-mishop/9b9d95e1ece27d5ec75205e5fe719ba5.apk">小米应用商店</option>
-		
-				
-				<option value="">👇👇  哔哩哔哩 👇👇</option>	
+			  <optgroup label="👇👇  哔哩哔哩 👇👇">
 			<option value="https://activity.hdslb.com/blackboard/static/20210604/4d40bc4f98f94fbc71c235832ce3efd4/hJEhL6jGOY.zip">上海灵羊1</option>
-			 
-				<option value="">👇👇  华为 👇👇</option>
+					<optgroup label="👇👇  华为 👇👇">
 			<option value="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p60-pro/images/camera/huawei-p60-pro-camera-ui.mp4">华为P60-pro素材</option> 
-			    <option value="">👇👇  锤子 👇👇</option>
+					<optgroup label="👇👇  锤子 👇👇">
 			<option value="https://static.smartisanos.cn/common/video/production/ocean/os-1-1710.mp4">Smartisan OS 官网公共资源</option> 
-			
-			
-			
-			    	<option value="">👇👇 拼多多 👇👇</option>
+					<optgroup label="👇👇 拼多多 👇👇">
 		   <option value="https://funimg.pddpic.com/c3affbeb-9b31-4546-b2df-95b62de81639.png.slim.png">拼多多H5官网静态资源-图像小文件</option> 
-	     <option value="https://t00img.yangkeduo.com/chat/images/2022-12-12/79e0a4684de85c7b59f797819260be98.jpeg">拼多多IMG/CDN资源文件</option> 
-	
-				<option value="">👇👇  国内其他大厂 👇👇</option>	
+			<option value="https://t00img.yangkeduo.com/chat/images/2022-12-12/79e0a4684de85c7b59f797819260be98.jpeg">拼多多IMG/CDN资源文件</option> 
+					<optgroup label="👇👇 国内其他大厂 👇👇">
 			<option value="https://dh5.cntv.myhwcdn.cn/asp/h5e/hls/1200/0303000a/3/default/ec48b9f8c76e49af842d4942914ad663/1.ts">CCTV</option>
-	 
 			<option value="https://cdn.aixifan.com/downloads/AcFun-acfunh5-release-6.62.0.1238_x64_60b608.apk">AcFun</option>
-		 
 			<option value="https://shark2.douyucdn.cn/front-publish/live-master/lib/vendor-room_4e3a873.js">斗鱼CDN-小文件</option>
 			<option value="https://dn-mars-assets.qbox.me/qiniulog/img-slogan-white-en.png">七牛云</option>
 			<option value="https://picture.xianniu.com/pc/download/4.6.9.3/xianniusetup.4.6.9.3.exe">鲜牛加速器(华为云CDN)</option>
 			<option value="https://gh.con.sh/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v2.21.12/Waifu2x-Extension-GUI-v2.21.12-Portable.7z">GitHub文件加速(cloudflare CDN)</option>
-				<option value="">👇👇  海外优选节点 👇👇</option>	
+					<optgroup label="👇👇 海外优选节点 👇👇">
 			<option value="https://cachefly.cachefly.net/100mb.test" >Cachefly 100MB</option>
 			<option value="https://speed.cloudflare.com/__down?bytes=25000000">cloudflare</option>
 			<option value="https://sgp-ping.vultr.com/vultr.com.1000MB.bin">Vultr 1G(新加坡)</option>
 			<option value="https://nj-us-ping.vultr.com/vultr.com.1000MB.bin">Vultr 1G(纽约)</option>
 			<option value="https://speedtest.tokyo2.linode.com/100MB-tokyo2.bin">Linode 100MB(日本省东京市)</option>
 			<option value="https://emp.bbci.co.uk/emp/dashjs/3.2.0-8/dash.all.min.js">BBC中文网</option>
-					<option value="">👇👇  其他并发测试 👇👇</option>	
+					<optgroup label="👇👇 接口并发测试 👇👇">
 			<option value="https://api.vv1234.cn/bing/api.php?idx=-1" >必应壁纸API</option>
-			
 			</select>
 		 <input style="" type="text" v-model="set.input" placeholder="直接在输入框内输入文件资源的下载链接即可，适用于未开启防盗链的直链资源，不支持网盘资源解析" class="form-control" autocomplete="off">
            
@@ -269,7 +256,7 @@
                     <div class="stat-title">运行时长</div>
                     <div class="stat-value">{{secToTime(spend)}}</div>
                 </div>
-                </div> <br/><p class="stat-title"  id="result">...正在努力加载用户侧网络延时情况....</p>
+                </div> <br/><p class="stat-title"  id="result">...正在努力加载用户侧网络延时情况....</p><p  id="realTime"></p>  
         </div>
     </div>
     <div class="card card-preview">
@@ -302,7 +289,7 @@
 		  <a href="old-index.php" target="_blank" class="nk-menu-link nk-ibx-action-item">→ 点我切换回旧版 ←</a>
 			 <hr>	
 			   
-	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20231117</a>  </p>
+	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20240128</a>  </p>
 	   <p> 日常更新：更新/移除部分失效资源链接，优化国内部分地区访问速度</p>
 	 
 	  <p>功能优化:对于网络波动及第三方资源访问故障等网络错误问题造成的执行中断,改为仍然强制执行!</p>
@@ -373,7 +360,7 @@ new Vue({
     el: '#app',
     data: {
         set: {
-            input: 'https://cachefly.cachefly.net/200mb.test',
+            input: 'https://cachefly.cachefly.net/50mb.test',
             output: '',
             infinite: true,
             status: false,
@@ -438,8 +425,9 @@ new Vue({
                 },
             }).catch(e => {
                 if (!axios.isCancel(e)) {
-                    layer.msg(e.message, {icon:2})
-                  //  this.set.status = false
+				//layer.msg(e.message, {icon:2})
+				layer.msg('因对方服务器限制，该资源暂无法访问，建议更换其他节点！', {icon:2})
+				 //  this.set.status = false
 				  this.set.status = true
                 }
             }).finally(() => {
@@ -494,7 +482,7 @@ new Vue({
     },
 });
 
-// 网络延迟输出
+////页面保活A 网络延迟输出
  function testLatency() {
       var resultElement = document.getElementById('result');
      var urlToTest = 'https://sqimg.qq.com/qq_product_operations/nettest/index2.html';
@@ -514,10 +502,50 @@ new Vue({
       xhr.open('GET', urlToTest, true);
       xhr.send();
     }
-     setInterval(testLatency, 3000);  
+   setInterval(testLatency, 3000);  
+     
+// 页面保活B  实时显示时间  
+// 获取显示实时时间的元素
+    var realTimeElement = document.getElementById('realTime');
+// 定期更新实时时间
+    function updateRealTime() {
+        fetch('https://api.vv1234.cn/time/api.php')
+            .then(response => response.text())
+            .then(data => {
+                // 输出响应内容到控制台
+                console.log('Raw response:', data);
+
+                // 尝试转换为数字
+                var timestamp = parseFloat(data);
+
+                if (!isNaN(timestamp)) {
+                    // 转换时间戳为实时时间
+                    var realTime = new Date(timestamp * 1000).toLocaleString();
+
+                    // 显示实时时间
+                    realTimeElement.textContent = realTime;
+
+                    // 打印输出到控制台
+                    console.log('Real-Time:', realTime);
+                } else {
+                    console.error('Invalid timestamp format:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching timestamp:', error);
+            });
+    }
+
+    // 初次调用
+    updateRealTime();
+
+    // 每秒更新一次实时时间
+    setInterval(updateRealTime, 1000);
+     
 </script>
 
-<script>document.onkeydown = function(){
+<script>
+document.onkeydown = function(){
   if(window.event && window.event.keyCode == 123) {
     alert("F12被禁用");
     event.keyCode=0;
@@ -549,7 +577,7 @@ return false;
 }
 </script>  
 
-<!-- 网络延时输出 -->
+
   <script>
    
   </script>
@@ -560,7 +588,7 @@ return false;
 <!-- 流量统计代码  20231117 放到最后延迟加载，避免页面长时间无响应  -->
 	<script src="//api.vv1234.cn/ip/api.php?action=getip&code=js&token=test&from=llxhq"></script>
 	<script src="//v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-	<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+	<script charset="UTF-8" id="LA_COLLECT" src="//fx.2ge.org/js-sdk-pro.min.js"></script>
 	<script>LA.init({id: "JjhvoI5bfYbANJBZ",ck: "JjhvoI5bfYbANJBZ",autoTrack:true,hashMode:true})</script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745983596040533"
 	     crossorigin="anonymous"></script>
