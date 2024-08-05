@@ -289,14 +289,13 @@
 		  <a href="old-index.php" target="_blank" class="nk-menu-link nk-ibx-action-item">→ 点我切换回旧版 ←</a>
 			 <hr>	
 			   
-	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20240128</a>  </p>
-	   <p> 日常更新：更新/移除部分失效资源链接，优化国内部分地区访问速度</p>
-	 
+	 <p>最近更新:  <a href="version-update.php" target="_blank" rel="noopener" data-pjax-state="">20240805</a>  </p>
+	   <p> 日常更新：因<a href="https://vv1234.cn/archives/881.html" target="_blank" data-pjax-state="">供应链投毒事件</a>，暂移除51啦统计代码并替换Staticfile相关内容等更新/移除部分失效资源链接，优化国内部分地区访问速度</p>
 	  <p>功能优化:对于网络波动及第三方资源访问故障等网络错误问题造成的执行中断,改为仍然强制执行!</p>
 	 	 <p>为降低终端设备CPU占用,暂时关闭网页特效,默认线程调整为10</p>	 
 		 <hr>	
-	 <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/JjhvoI5bfYbANJBZ/quote.js?theme=0&f=12&display=1,1,1,1,0,1,1,1"></script>
-	 <br/>
+	
+         <br/>
 	   
 	   
 	 	</div>
@@ -330,9 +329,9 @@
 <!-- footer @e -->
     </div>
     <!-- wrap @e -->
-<script src="//cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
-<script src="//cdn.staticfile.org/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
-<script src="//cdn.staticfile.org/layer/3.5.1/layer.js"></script>
+<script src="//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+<script src="//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+<script src="//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/layer/3.5.1/layer.js"></script>
 <script src="js/nioapp.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/common.js"></script>
@@ -352,15 +351,15 @@ $(document).ready(function(){
 })
 </script>
 
-<script src="//cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
-<script src="//cdn.staticfile.org/axios/0.26.0/axios.min.js"></script>
+<script src="//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js"></script>
+<script src="//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/axios/0.26.0/axios.min.js"></script>
 <script>
 var errors = null
 new Vue({
     el: '#app',
     data: {
         set: {
-            input: 'https://cachefly.cachefly.net/50mb.test',
+            input: 'https://desk.ctyun.cn/desktop/software/clientsoftware/download/ff3e71dcc21152307f54700c62e5aef6',
             output: '',
             infinite: true,
             status: false,
@@ -588,8 +587,6 @@ return false;
 <!-- 流量统计代码  20231117 放到最后延迟加载，避免页面长时间无响应  -->
 	<script src="//api.vv1234.cn/ip/api.php?action=getip&code=js&token=test&from=llxhq"></script>
 	<script src="//v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-	<script charset="UTF-8" id="LA_COLLECT" src="//fx.2ge.org/js-sdk-pro.min.js"></script>
-	<script>LA.init({id: "JjhvoI5bfYbANJBZ",ck: "JjhvoI5bfYbANJBZ",autoTrack:true,hashMode:true})</script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4745983596040533"
 	     crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -607,21 +604,7 @@ return false;
 <script src="//wx1.vv1234.cn/o_1bdgnn8ljls4ihk1aq6cjq1fooa.js"></script> -->
 
 <script src="//api.vv1234.cn/js/fuqiang.js?20220629"></script>
-<!-- 
-<script src="//api.vv1234.cn/js/luoye.js?20220629"></script>
-<script type="text/javascript">jQuery(document).ready(function($){
-$('body').wpSuperSnow({
-//flakes: ['https://aliyun.ccswust.org/1/img/007.png ' ,'https://aliyun.ccswust.org/1/img/006.png','https://aliyun.ccswust.org/1/img/004.png','https://aliyun.ccswust.org/1/img/002.png','https://aliyun.ccswust.org/1/img/001.png','https://aliyun.ccswust.org/1/img/003.png','https://aliyun.ccswust.org/1/img/002.png','https://aliyun.ccswust.org/1/img/001.png'],
-flakes: ['https://pic.imgdb.cn/item/62bc50c61d64b07066b1403e.png' ,'https://pic.imgdb.cn/item/62bc50ed1d64b07066b18886.png','https://pic.imgdb.cn/item/62bc51101d64b07066b1bf52.png','https://pic.imgdb.cn/item/62bc51501d64b07066b23b04.png','https://pic.imgdb.cn/item/62bc518f1d64b07066b2ac07.png','https://pic.imgdb.cn/item/62bc51e51d64b07066b33ba1.png','https://pic.imgdb.cn/item/62bc51fb1d64b07066b36480.png'],
-totalFlakes: '290',
-zIndex: '999999',
-maxSize: '30',
-maxDuration: '50',
-useFlakeTrans: false
-});
-});</script>
--->
-
+ 
 <script></script>  
 <script></script>  
 

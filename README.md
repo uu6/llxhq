@@ -19,6 +19,8 @@ https://api.vv1234.cn/llxhq/
 项目下载：
 [https://github.com/uu6/llxhq][2]
 
+因：[https://vv1234.cn/archives/881.html][https://vv1234.cn/archives/881.html] 事件，暂移除51啦统计代码并替换Staticfile相关内容等。
+
 部署说明：
 打包下载文件: https://github.com/uu6/llxhq/archive/refs/heads/main.zip
 部署到你站点目录下，如果服务端环境为纯静态文件托管，如GitHub page,阿里云OSS，腾讯云COS的话，可能需要你动手重命名下文件后缀名，把.php改成.html；
